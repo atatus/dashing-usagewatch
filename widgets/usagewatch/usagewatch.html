@@ -1,0 +1,31 @@
+<h1 class="title" data-bind="title"></h1>
+
+<ul class="list-nostyle">
+  <li>
+    <span class="column">Disk:</span>
+    <span class="value" data-bind="diskused | raw"></span>
+    <span class="suffix">GB</span>
+  </li>
+  <li>
+    <span class="column">Disk:</span>
+    <span class="value" data-bind="diskused_perc | raw"></span>
+    <span class="suffix">%</span>
+  </li>
+  <li>
+    <span class="column">Memory:</span>
+    <span class="value" data-bind="memused | raw"></span>
+    <span class="suffix">%</span>
+  </li>
+  <li>
+    <span class="column">CPU:</span>
+    <span class="value" data-bind="cpuused | raw"></span>
+    <span class="suffix">%</span>
+  </li>
+  <li>
+    <span class="column">TCP:</span>
+    <span class="value" data-bind="tcpused | raw"></span>
+  </li>
+</ul>
+
+<p class="more-info" data-bind="moreinfo | raw"></p>
+<p class="updated-at" data-bind="updatedAtMessage"></p>
